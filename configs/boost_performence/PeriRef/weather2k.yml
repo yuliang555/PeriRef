@@ -1,0 +1,56 @@
+dataset: weather2k
+fixed:
+  root_path: ./datasets/
+  data_path: Weather2K.csv
+  model_id: Weather2K
+  data: custom
+  enc_in: 100
+  seq_len: 96
+  cycle: 8
+  long_type: sin
+  long_len: 128
+pred_len_configs:
+  96:
+    learning_rate: 0.005
+    lradj: type1
+    use_norm: 1    
+    use_pos: 1
+    d_model: 128
+    d_ff: 128
+    e_layers: 1
+    N: 0
+    short_periods: [8]    
+    long_periods: [2920]
+  192:
+    learning_rate: 0.001
+    lradj: type1
+    use_norm: 1     
+    use_pos: 1
+    d_model: 256
+    d_ff: 512
+    e_layers: 2
+    N: 0
+    short_periods: [8, 4]    
+    long_periods: [2920]
+  336:
+    learning_rate: 0.001
+    lradj: type1
+    use_norm: 1     
+    use_pos: 1
+    d_model: 256
+    d_ff: 512
+    e_layers: 2
+    N: 0
+    short_periods: [8, 4]    
+    long_periods: [2920]
+  720:
+    learning_rate: 0.001
+    lradj: type1
+    use_norm: 1     
+    use_pos: 1
+    d_model: 256
+    d_ff: 512
+    e_layers: 2
+    N: 0
+    short_periods: [8, 4]    
+    long_periods: [2920]

@@ -1,0 +1,56 @@
+dataset: ecl
+fixed:
+  root_path: ./datasets/
+  data_path: ECL.csv
+  model_id: ECL
+  data: custom
+  enc_in: 321
+  cycle: 168
+  short_type: sin
+  long_type: sin
+  long_len: 128
+pred_len_configs:
+  96:
+    learning_rate: 0.001
+    lradj: type4  
+    use_norm: 1
+    use_pos: 1
+    d_model: 512
+    d_ff: 1024
+    e_layers: 2
+    N: 0  
+    short_periods: [168, 84, 56, 24, 12, 8, 6]
+    long_periods: [8760]
+  192:
+    learning_rate: 0.001
+    lradj: type4  
+    use_norm: 1
+    use_pos: 1
+    d_model: 512
+    d_ff: 1024
+    e_layers: 2
+    N: 0  
+    short_periods: [168, 84, 56, 24, 12, 8, 6]
+    long_periods: [8760]
+  336:
+    learning_rate: 0.001
+    lradj: type1  
+    use_norm: 1
+    use_pos: 1
+    d_model: 512
+    d_ff: 2048
+    e_layers: 2
+    N: 8  
+    short_periods: [168, 84, 56, 24, 12, 8, 6]
+    long_periods: [8760]
+  720:
+    learning_rate: 0.001
+    lradj: type1  
+    use_norm: 1
+    use_pos: 1
+    d_model: 512
+    d_ff: 2048
+    e_layers: 2
+    N: 8  
+    short_periods: [168, 84, 56, 24, 12, 8, 6]
+    long_periods: [8760]      

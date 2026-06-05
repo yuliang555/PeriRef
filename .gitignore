@@ -1,0 +1,35 @@
+.idea/
+.DS_Store
+
+__pycache__/
+*.pyc
+#*.pth
+
+# Runtime and experiment artifacts
+test_results/
+results/
+logs/
+checkpoints/
+Print/
+Prints/
+Figure/
+Figures/
+ACF_Long/
+
+# Datasets: keep only the two packaged CSV files.
+dataset/
+datasets/*
+!datasets/
+!datasets/DeepSoil.csv
+!datasets/Weather2K.csv
+
+# Removed script bundle
+scripts/
+
+# Generated files
+*.txt
+!requirements.txt
+*.csv
+!datasets/DeepSoil.csv
+!datasets/Weather2K.csv
+*.pdf

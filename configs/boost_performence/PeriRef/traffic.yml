@@ -1,0 +1,57 @@
+dataset: traffic
+fixed:
+  root_path: ./datasets/
+  data_path: Traffic.csv
+  model_id: Traffic
+  data: custom
+  enc_in: 862
+  seq_len: 96
+  cycle: 168
+  short_type: sin
+  long_type: sin
+  long_len: 128
+pred_len_configs:
+  96:
+    learning_rate: 0.002
+    lradj: type4
+    use_norm: 2
+    use_pos: 0
+    d_model: 512
+    d_ff: 2048
+    e_layers: 2
+    N: 0
+    short_periods: [168, 84, 56, 24, 12, 8, 6]
+    long_periods: [8784, 4392]
+  192:
+    learning_rate: 0.002
+    lradj: type4
+    use_norm: 2
+    use_pos: 0
+    d_model: 512
+    d_ff: 2048
+    e_layers: 2
+    N: 0
+    short_periods: [168, 84, 56, 24, 12, 8, 6]
+    long_periods: [8784, 4392]
+  336:
+    learning_rate: 0.002
+    lradj: type4
+    use_norm: 2
+    use_pos: 0
+    d_model: 512
+    d_ff: 2048
+    e_layers: 2
+    N: 0
+    short_periods: [168, 84, 56, 24, 12, 8, 6]
+    long_periods: [8784, 4392]
+  720:
+    learning_rate: 0.002
+    lradj: type4
+    use_norm: 2
+    use_pos: 0
+    d_model: 512
+    d_ff: 2048
+    e_layers: 2
+    N: 0
+    short_periods: [168, 84, 56, 24, 12, 8, 6]
+    long_periods: [8784, 4392]

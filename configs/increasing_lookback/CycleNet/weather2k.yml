@@ -1,0 +1,26 @@
+dataset: weather2k
+fixed:
+  root_path: ./datasets/
+  data_path: Weather2K.csv
+  model_id: Weather2K
+  data: custom
+  enc_in: 100
+  pred_len: 720
+  cycle: 8
+  model_type: mlp
+seq_len_configs:
+  48:
+    learning_rate: 0.005
+    d_model: 256
+  96:
+    learning_rate: 0.005
+    d_model: 256
+  192:
+    learning_rate: 0.005
+    d_model: 256
+  336:
+    learning_rate: 0.005
+    d_model: 128
+  720:
+    learning_rate: 0.005
+    d_model: 128

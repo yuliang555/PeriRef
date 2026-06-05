@@ -1,0 +1,35 @@
+dataset: traffic
+fixed:
+  root_path: ./datasets/
+  data_path: Traffic.csv
+  model_id: Traffic
+  data: custom
+  enc_in: 862
+  pred_len: 720
+  cycle: 168
+seq_len_configs:
+  48:
+    learning_rate: 0.001
+    d_model: 512
+    d_ff: 512
+    e_layers: 3
+  96:
+    learning_rate: 0.001
+    d_model: 512
+    d_ff: 512
+    e_layers: 4
+  192:
+    learning_rate: 0.001
+    d_model: 512
+    d_ff: 512
+    e_layers: 4
+  336:
+    learning_rate: 0.001
+    d_model: 512
+    d_ff: 512
+    e_layers: 4
+  720:
+    learning_rate: 0.001
+    d_model: 512
+    d_ff: 512
+    e_layers: 4
