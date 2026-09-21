@@ -1,0 +1,30 @@
+dataset: ecl
+fixed:
+  root_path: ./datasets/
+  data_path: ECL.csv
+  model_id: ECL
+  data: custom
+  enc_in: 321
+  cycle: 168
+  seq_len: 96
+pred_len_configs:
+  96:
+    learning_rate: 0.001
+    d_model: 512
+    d_ff: 512
+    e_layers: 3
+  192:
+    learning_rate: 0.001
+    d_model: 512
+    d_ff: 512
+    e_layers: 3
+  336:
+    learning_rate: 0.001
+    d_model: 512
+    d_ff: 512
+    e_layers: 3
+  720:
+    learning_rate: 0.001
+    d_model: 512
+    d_ff: 512
+    e_layers: 4                  

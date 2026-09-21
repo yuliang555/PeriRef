@@ -1,0 +1,17 @@
+.idea/
+.vscode/
+*.pyc
+#*.pth
+test_results/
+results/
+logs/
+checkpoints/
+Figure/
+.DS_Store
+
+
+*.txt
+!requirements.txt
+*.csv
+!datasets/**/*.csv
+*.pdf

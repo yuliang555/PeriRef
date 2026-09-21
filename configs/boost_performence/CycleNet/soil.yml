@@ -1,0 +1,24 @@
+dataset: soil
+fixed:
+  root_path: ./datasets/
+  data_path: DeepSoil.csv
+  model_id: DeepSoil
+  data: custom
+  enc_in: 4
+  seq_len: 96
+  cycle: 24
+  model_type: mlp
+  use_long: 0
+pred_len_configs:
+  96:
+    learning_rate: 0.005
+    d_model: 128
+  192:
+    learning_rate: 0.005
+    d_model: 128
+  336:
+    learning_rate: 0.005
+    d_model: 128
+  720:
+    learning_rate: 0.005
+    d_model: 128
